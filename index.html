@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CoJourn for Climate Action</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f9f6;
+      color: #2d3436;
+    }
+    header {
+      background: #007f5f;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      background: #2d6a4f;
+      padding: 1rem;
+    }
+    nav button {
+      background: #ffffff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    nav button:hover {
+      background: #b7e4c7;
+    }
+    section {
+      display: none;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+    section.active {
+      display: block;
+    }
+    footer {
+      background: #2d6a4f;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    h2 {
+      color: #007f5f;
+    }
+    blockquote {
+      border-left: 4px solid #007f5f;
+      padding-left: 1rem;
+      font-style: italic;
+      color: #444;
+    }
+    .media-links a {
+      display: block;
+      color: #007f5f;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>CoJourn for Climate Action</h1>
+  <p>Compassionate Accountability for a Sustainable Future</p>
+</header>
+
+<nav>
+  <button onclick="showSection('about')">About</button>
+  <button onclick="showSection('book')">The Book</button>
+  <button onclick="showSection('org-offerings')">Organizational Offerings</button>
+  <button onclick="showSection('individuals')">Program for Individuals</button>
+  <button onclick="showSection('blog')">Blog</button>
+  <button onclick="showSection('orgs')">CoJourn for Orgs</button>
+  <button onclick="showSection('justice')">Racial Justice</button>
+  <button onclick="showSection('climate')">Climate Action</button>
+</nav>
+
+<section id="about" class="active">
+  <h2>About</h2>
+  <p>We are in the midst of a climate emergency. The next decade is critical. CoJourn for Climate Action helps individuals and organizations stay accountable, courageous, and persistent in taking meaningful steps towards climate justice.</p>
+</section>
+
+<section id="book">
+  <h2>The Book</h2>
+  <p>Discover how the CoJourn framework was developed and how it’s transforming lives through reflective accountability and community support. Learn more in our companion guide and workbook provided during the program.</p>
+</section>
+
+<section id="org-offerings">
+  <h2>Organizational Offerings</h2>
+  <p>We work with K–12 schools, universities, non-profits, and corporations to integrate the CoJourn framework into climate strategy efforts. Programs are adaptable and built with your needs in mind.</p>
+</section>
+
+<section id="individuals">
+  <h2>Program for Individuals</h2>
+  <p>Get paired with a supportive, nonjudgmental partner for weekly check-ins over 12 weeks. Join a community, access curated resources, and take manageable climate actions that align with your values.</p>
+</section>
+
+<section id="blog">
+  <h2>Blog</h2>
+  <div class="media-links">
+    <a href="#">🎧 Podcast: Climate Action & Connection in an Election Year</a>
+    <a href="#">📝 Blog: Molly Keehn on Starting Where You Are</a>
+    <a href="#">🌍 Blog: TerraConfluence – Global Event Spotlight</a>
+  </div>
+</section>
+
+<section id="orgs">
+  <h2>CoJourn for Orgs</h2>
+  <p>Apply CoJourn to your climate strategy goals as an organization. From executive leaders to grassroots teams, our adaptable structure enables aligned climate action supported by community and accountability.</p>
+</section>
+
+<section id="justice">
+  <h2>CoJourn for Racial Justice</h2>
+  <p>Based on the successful racial justice program model, CoJourn for Climate Action extends the same peer-based approach toward environmental and climate-related issues with compassion and solidarity.</p>
+</section>
+
+<section id="climate">
+  <h2>CoJourn for Climate Action</h2>
+  <p>✔ 12-week cohort experience with partner matching<br/>
+     ✔ Companion guide + weekly email support<br/>
+     ✔ Monthly gatherings for reflection and growth<br/>
+     ✔ Opportunities to make real change, from wherever you are</p>
+
+  <blockquote>“Once we start to act, hope is everywhere. So instead of looking for hope, look for action. Then, and only then, hope will come.”<br/>— Greta Thunberg</blockquote>
+
+  <h3>Participant Testimonials</h3>
+  <p><strong>Poulomi Chakravarty, PhD</strong><br/>
+  "The CoJourn framework turned an overwhelming global initiative into an experience filled with hope and momentum. The partner model made the difference."</p>
+
+  <p><strong>Elena Huisman</strong><br/>
+  "It helped me reconnect with my purpose and build bridges across professional and personal realms of climate work."</p>
+
+  <h3>Survey Insights</h3>
+  <ul>
+    <li>“It addressed the paralysis often felt about climate crisis.”</li>
+    <li>“Helped me break down big goals into small actions.”</li>
+    <li>“I stayed more informed and aware.”</li>
+    <li>“Found support and structure for action.”</li>
+  </ul>
+
+  <h3>Bring CoJourn to Your Group</h3>
+  <p>Email us at <a href="mailto:connect@cojourn.org">connect@cojourn.org</a> to start your custom CoJourn for Climate Action journey.</p>
+</section>
+
+<footer>
+  <p>©2025 CoJourn | <a style="color:#90e0ef" href="#">Privacy Policy</a><br/>
+  Follow us: LinkedIn | Facebook | Instagram</p>
+</footer>
+
+<script>
+  function showSection(id) {
+    document.querySelectorAll('section').forEach(sec => {
+      sec.classList.remove('active');
+    });
+    document.getElementById(id).classList.add('active');
+  }
+</script>
+
+</body>
+</html>
